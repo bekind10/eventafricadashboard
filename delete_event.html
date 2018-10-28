@@ -1,0 +1,120 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DASHBOARD</title>
+  <link rel='shortcut icon' href='assest/images/logo-3.png' type='image/x-icon' />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assest/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assest/css/main.css">
+  <link rel="stylesheet" href="assest/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+    
+  
+</head>
+
+<body>
+
+  <!-- Narv Top Bar -->
+  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-1 col-md-1.5 mr-0" href="#">
+      <img src="assest/images/logo-2.png" height="40" width="70">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="nav_bar-side" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <input class="form-control form-control-dark w-100 mr-sm-2 mr-3" type="text" placeholder="Search" aria-label="Search">
+    <button type="button" class="btn btn-secondary px-2">Search</button>
+
+    <div class="navbar-nav px-3 col-md-1 ">
+        <a class="dropdown-toggle profile-pic mr-2" data-toggle="dropdown" href="#">
+          <img src="assest/images/ay.jpg" alt="user-img" width="30" class="rounded-circle">
+          <b class="hidden-xs">Ayomikun</b><span class="caret"></span> </a>
+     </div>
+      <button type="button" class="btn btn-outline-success float-right mr-3"><i class="fas fa-user-edit"></i>Edit Profile</button>
+    </ul>
+  </nav>
+
+
+
+  <div class="container-fluid ">
+    <div class="row">
+      <!-- Narv Side Bar -->
+      <nav class="col-md-1.5 d-none d-md-block bg-light sidebar" id="nav_bar-side">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column pt-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i>
+                DASHBOARD 
+              </a>
+            </li>
+            <li class="nav-item pt-1">
+              <a class="nav-link" href="add_event.html">
+                <i class="fas fa-address-card"></i>
+                ADD EVENT <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item pt-2">
+                <a class="nav-link" href="view_event.html">
+                  <i class="fas fa-eye-slash"></i>
+                  VIEW EVENT
+                </a>
+              </li>
+            <li class="nav-item pt-2">
+              <a class="nav-link" href="edit_event.html">
+                <i class="fas fa-edit"></i>
+                EDIT EVENT
+              </a>
+            </li>
+            <li class="nav-item pt-2">
+              <a class="nav-link active" href="delete_event.html">
+                <i class="fas fa-trash-alt"></i>
+                DELETE EVENT
+              </a>
+            </li>
+            <li class="nav-item pt-4">
+              <button type="button" class="btn btn-danger ml-3">Log Out</button>
+              <a class="nav-link" href="#">
+                <span data-feather="bar-chart-2"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class=" col-12 col-md-12 ml-sm-auto col-lg-10 px-4">
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+          <h1 class="h2">Delete Events</h1>
+          <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+              <button class="btn btn-sm btn-outline-secondary">Share</button>
+              <button class="btn btn-sm btn-outline-secondary">Export</button>
+            </div>
+            <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+              <span data-feather="calendar"></span>
+              Events
+            </button>
+          </div>
+        </div>
+       
+      </main>
+        
+    </div>
+  </div>
+  <div class="footer" style="height:40px;"> 
+        <p class="pt-2"> <strong>2017 © Ample Admin brought to you by Projaro Design Class 2018</strong></p>
+      </div>
+
+
+  <script src="assest/js/bootstrap.js" async defer></script>
+  <script src="assest/js/jquery.js" async defer></script>
+  <script src="assest/js/main.js" async defer></script>
+  
+</body>
+
+</html>
