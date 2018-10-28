@@ -20,9 +20,10 @@
 <body>
 
   <!-- Narv Top Bar -->
+
   <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-1 col-md-1.5 mr-0" href="#">
-      <img src="assest/images/logo-2.png" height="40" width="70">
+    <a class="navbar-brand col-sm-1 col-md-2 mr-0">
+      <span style="text-align: center; color: whitesmoke; text-shadow: greenyellow"><strong>DASHBOARD</strong></span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="nav_bar-side" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -39,20 +40,25 @@
     </ul>
   </nav>
 
-
-
+  <!-- Body page -->
   <div class="container-fluid ">
     <div class="row">
-      <!-- Narv Side Bar -->
-      <nav class="col-md-1.5 d-none d-md-block bg-light sidebar" id="nav_bar-side">
-        <div class="sidebar-sticky">
-          <ul class="nav flex-column pt-3">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                <i class="fas fa-home"></i>
-                DASHBOARD 
-              </a>
-            </li>
+
+  <!-- Narv Side Bar -->
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+          <div class="sidebar-sticky">
+            <ul class="nav flex-column pt-3">
+                <li class="nav-item pt-0 pl-4">
+                    <a href="index.html">
+                        <img src="assest/images/logo-3.png" height="70" width="110">
+                    </a>
+                </li>
+              <li class="nav-item pt-2">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home"></i>
+                  DASHBOARD
+                </a>
+              </li>
             <li class="nav-item pt-1">
               <a class="nav-link" href="add_event.html">
                 <i class="fas fa-address-card"></i>
@@ -87,6 +93,7 @@
         </div>
       </nav>
 
+  <!-- Main Content Body -->
       <main role="main" class=" col-12 col-md-12 ml-sm-auto col-lg-10 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">View Events</h1>
