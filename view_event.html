@@ -10,11 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assest/css/bootstrap.min.css">
   <link rel="stylesheet" href="assest/css/main.css">
+  <link rel="stylesheet" href="assest/css/mainjude.css">
   <link rel="stylesheet" href="assest/css/bootstrap-grid.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
-    
-  
+
+
 </head>
 
 <body>
@@ -25,18 +26,19 @@
     <a class="navbar-brand col-sm-1 col-md-2 mr-0">
       <span style="text-align: center; color: whitesmoke; text-shadow: greenyellow"><strong>DASHBOARD</strong></span>
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="nav_bar-side" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="nav_bar-side" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <input class="form-control form-control-dark w-100 mr-sm-2 mr-3" type="text" placeholder="Search" aria-label="Search">
     <button type="button" class="btn btn-secondary px-2">Search</button>
 
     <div class="navbar-nav px-3 col-md-1 ">
-        <a class="dropdown-toggle profile-pic mr-2" data-toggle="dropdown" href="#">
-          <img src="assest/images/ay.jpg" alt="user-img" width="30" class="rounded-circle">
-          <b class="hidden-xs">Ayomikun</b><span class="caret"></span> </a>
-     </div>
-      <button type="button" class="btn btn-outline-success float-right mr-3"><i class="fas fa-user-edit"></i>Edit Profile</button>
+      <a class="dropdown-toggle profile-pic mr-2" data-toggle="dropdown" href="#">
+        <img src="assest/images/ay.jpg" alt="user-img" width="30" class="rounded-circle">
+        <b class="hidden-xs">Ayomikun</b><span class="caret"></span> </a>
+    </div>
+    <button type="button" class="btn btn-outline-success float-right mr-3"><i class="fas fa-user-edit"></i>Edit Profile</button>
     </ul>
   </nav>
 
@@ -44,21 +46,21 @@
   <div class="container-fluid ">
     <div class="row">
 
-  <!-- Narv Side Bar -->
+      <!-- Narv Side Bar -->
       <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-          <div class="sidebar-sticky">
-            <ul class="nav flex-column pt-3">
-                <li class="nav-item pt-0 pl-4">
-                    <a href="index.html">
-                        <img src="assest/images/logo-3.png" height="70" width="110">
-                    </a>
-                </li>
-              <li class="nav-item pt-2">
-                <a class="nav-link" href="index.html">
-                  <i class="fas fa-home"></i>
-                  DASHBOARD
-                </a>
-              </li>
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column pt-3">
+            <li class="nav-item pt-0 pl-4">
+              <a href="index.html">
+                <img src="assest/images/logo-3.png" height="70" width="110">
+              </a>
+            </li>
+            <li class="nav-item pt-2">
+              <a class="nav-link" href="index.html">
+                <i class="fas fa-home"></i>
+                DASHBOARD
+              </a>
+            </li>
             <li class="nav-item pt-1">
               <a class="nav-link" href="add_event.html">
                 <i class="fas fa-address-card"></i>
@@ -66,11 +68,11 @@
               </a>
             </li>
             <li class="nav-item pt-2">
-                <a class="nav-link active" href="view_event.html">
-                  <i class="fas fa-eye-slash"></i>
-                  VIEW EVENT
-                </a>
-              </li>
+              <a class="nav-link active" href="view_event.html">
+                <i class="fas fa-eye-slash"></i>
+                VIEW EVENT
+              </a>
+            </li>
             <li class="nav-item pt-2">
               <a class="nav-link" href="edit_event.html">
                 <i class="fas fa-edit"></i>
@@ -93,9 +95,11 @@
         </div>
       </nav>
 
-  <!-- Main Content Body -->
-      <main role="main" class=" col-12 col-md-12 ml-sm-auto col-lg-10 px-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <!-- Main Content Body -->
+      <main role="main" class=" col-12 col-md-10 ml-sm-auto my-2">
+        <div class="row">
+        <div class="col-md-12">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">View Events</h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
@@ -107,24 +111,398 @@
               Events
             </button>
           </div>
+          </div>
         </div>
 
-        
-       <!-- Add Your your table Here -->
 
+        <!-- Add Your your table Here -->
 
-      </main>
-        
-    </div>
-  </div>
-  <div class="footer" style="height:40px;"> 
-        <p class="pt-2"> <strong>2017 © Ample Admin brought to you by Projaro Design Class 2018</strong></p>
+        <div class="col-md-12">
+              <div class="container">
+                <h3 class="jumbotron">FULL LIST OF EVENT</h3>
+                <p class="para">List Of Events In No Particular Order</p>
+                <table class="table table-bordered table-responsive-sm">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th>Event Title</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Location</th>
+                      <th>Event Category</th>
+                      <th>View Full Details</th>
+                      <th>Approve/Diapprove</th>
+                      <th>Delete</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Exit of a rare gem</td>
+                      <td>21/12/2018</td>
+                      <td>2pm</td>
+                      <td>Abia State
+                      </td>
+                      <td>Burial</td>
+                      <td>
+                        <a role="button" href="#" class="btn btn-outline-primary view" data-toggle="tooltip" data-placement="left" title="venue, directions, phone number, amount paid and comments">
+                          Click Here
+                          <span class="badge badge-light"><i class="fas fa-street-view"></i></span>
+                        </a>
+                      </td>
+                      <td>
+                        <div class="dropdown">
+                          <button type="button" class="btn btn-primary sel-btn dropdown-toggle" data-toggle="dropdown">
+                            Select
+                          </button>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Approve</a>
+                            <a class="dropdown-item" href="#">Disapprove</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Place Event On Hold</a>
+                          </div>
+                        </div>
+                      </td>
+                      <td><a class="btn delete btn-sm" href="#" role="button" data-toggle="modal" data-target="#myModal">Delete
+                          <span class="badge badge-light"><i class="fas fa-trash-alt"></i></span>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
       </div>
+
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">WARNING!!!</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Are you sure you need to delete this this event? If you delete this event you will not access it again.
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </main>
+
+  </div>
+  </div>
+  <div class="footer" style="height:40px;">
+    <p class="pt-2"> <strong>2017 © Ample Admin brought to you by Projaro Design Class 2018</strong></p>
+  </div>
+  <!--bootstrap java script-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--Optional javascript-->
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 
   <script src="assest/js/bootstrap.js" async defer></script>
   <script src="assest/js/jquery.js" async defer></script>
   <script src="assest/js/main.js" async defer></script>
-  
+
 </body>
 
 </html>

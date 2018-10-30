@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assest/css/bootstrap.min.css">
   <link rel="stylesheet" href="assest/css/main.css">
-  <link rel="stylesheet" href="assest/css/juse_main.css">
+  <link rel="stylesheet" href="assest/css/mainjude.css">
   <link rel="stylesheet" href="assest/css/bootstrap-grid.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
     crossorigin="anonymous">
@@ -22,7 +22,7 @@
 
   <!-- Narv Top Bar -->
   <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-1 col-md-2 mr-0" >
+    <a class="navbar-brand col-sm-1 col-md-2 mr-0">
       <span style="text-align: center; color: whitesmoke; text-shadow: greenyellow"><strong>DASHBOARD</strong></span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav_bar-side" aria-controls="navbarSupportedContent"
@@ -49,11 +49,11 @@
       <nav class="col-md-2 d-none d-md-block bg-light sidebar">
         <div class="sidebar-sticky">
           <ul class="nav flex-column pt-3">
-              <li class="nav-item pt-0 pl-4">
-                  <a href="index.html">
-                      <img src="assest/images/logo-3.png" height="70" width="110">
-                  </a>
-              </li>
+            <li class="nav-item pt-0 pl-4">
+              <a href="index.html">
+                <img src="assest/images/logo-3.png" height="70" width="110">
+              </a>
+            </li>
             <li class="nav-item pt-2">
               <a class="nav-link" href="index.html">
                 <i class="fas fa-home"></i>
@@ -94,34 +94,123 @@
         </div>
       </nav>
 
-    <!-- Main Content Body -->
-      <main role="main" class=" col-12 col-md-12 ml-sm-auto col-lg-10 px-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Add Events</h1>
-          <div class="btn-toolbar mb-2 mb-md-0">
-            <div class="btn-group mr-2">
-              <button class="btn btn-sm btn-outline-secondary">Share</button>
-              <button class="btn btn-sm btn-outline-secondary">Export</button>
+      <!-- Main Content Body -->
+      <main role="main" class=" col-12 col-md-10 ml-sm-auto my-2">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+              <h1 class="h2">Add Events</h1>
+              <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group mr-2">
+                  <button class="btn btn-sm btn-outline-secondary">Share</button>
+                  <button class="btn btn-sm btn-outline-secondary">Export</button>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                  <span data-feather="calendar"></span>
+                  Events
+                </button>
+              </div>
             </div>
-            <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
-              <span data-feather="calendar"></span>
-              Events
-            </button>
+          </div>
+
+          <!-- Add you Form Here -->
+          <div class="col-md-12">
+            <!--main section-->
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10 col-sm-6">
+                <form class="mt-2 mb-5" action="/action_page.php">
+                  <div class="form-group width70">
+                    <label for="email">CLIENT'S NAME:</label>
+                    <input type="email" class="form-control form-control-lg" id="email">
+                  </div>
+                  <div class="form-group width70">
+                    <label for="email">EVENT TITLE:</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+
+                  <div class="form-group width70">
+                    <label for="eventtype">EVENT CATEGORY:</label>
+                    <select name="eventtype" class="custom-select">
+                      <option selected>Defines the event</option>
+                      <option value="wedding">Weddings</option>
+                      <option value="conferences">Conferences</option>
+                      <option value="Internationalevents">International Events</option>
+                      <option value="workshop">Work Shops</option>
+                    </select>
+                  </div>
+                  <div class="form-group width70">
+                    <label for="evenlocation">EVENT LOCATION:</label>
+                    <select name="evenlocation" class="custom-select">
+                      <option selected>choose a state in Nigeria, if overseas choose others</option>
+                      <option value="abuja">Abuja</option>
+                      <option value="lagos">Lagos</option>
+                      <option value="ph">PortHarcourt</option>
+                      <option value="others">Others</option>
+                    </select>
+                  </div>
+                  <div class="form-group width70 mt-3">
+                    <label class="pr-3" for="others">EVENT TIME:</label>
+                    <input type="text" data-toggle="tooltip" title="No African Time Please" class="form-control" placeholder=" 3.45pm" id="time">
+                  </div>
+
+                  <div class="form-group width70 mt-3">
+                    <label class="pr-3" for="others">OTHERS:</label>
+                    <input type="text" data-toggle="tooltip" title="If you choose others,type the location here" placeholder="please specify"
+                      class="form-control" id="email">
+                  </div>
+                  <div class="form-group width70">
+                    <label for="venue">VENUE :</label>
+                    <textarea class="form-control" rows="3" data-toggle="tooltip" title="please provide suficient details" placeholder="location and address"
+                      class="form-control" id="comment" name="text"></textarea>
+                  </div>
+                  <div class="form-group width70">
+                    <label for="venue">COMMENTS:</label>
+                    <textarea class="form-control" rows="3" data-toggle="tooltip" title="brief description of the event" placeholder="comments"
+                      class="form-control" id="comment" name="text"></textarea>
+                  </div>
+                  <div class="form-inline">
+                    <div class="custom-file  width70">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label mr-5" for="customFile">Upload Documents</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input ml-3" checked id="customCheck" name="approve">
+                      <label class="custom-control-label ml-1" for="customCheck"> Approve</label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-addevent mt-3">Add Event <span class="badge badge-light"><i class="far fa-calendar-check"></i></span></button>
+                </form>
+
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+
           </div>
         </div>
+      </main>
 
-        <!-- Add you Form Here -->
-
-  </main>
-
+    </div>
   </div>
-</div>
 
-<!-- Footer Section -->
+  <!-- Footer Section -->
   <div class="footer" style="height:40px;">
     <p class="pt-2"> <strong>2017 © Ample Admin brought to you by Projaro Design Class 2018</strong></p>
   </div>
 
+  <!--bootstrap java script-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--Optional javascript-->
+  <script>
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+  </script>
 
   <script src="assest/js/bootstrap.js" async defer></script>
   <script src="assest/js/jquery.js" async defer></script>
